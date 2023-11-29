@@ -60,6 +60,43 @@ body{
     font-family: Montserrat;
 }
 
+h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+
+.articleFlex{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.articleFlex article{
+    
+    border-radius: 20px;
+    max-width: 360px;
+    box-shadow:  5px 5px 8px #aaaaaa,
+             -5px -5px 11px #ffffff;
+}
+
+.articleFlex article img{
+    max-width: 100%;
+ 
+}
+
+.articleFlex img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; 
+}
+
+.articleText{
+    padding: 15px 20px 30px 20px;
+}
+
 
 footer{
     background-color: #016EB6;
