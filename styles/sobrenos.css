@@ -45,12 +45,12 @@ nav{
 button{
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #eeaf61;
     font-family: Montserrat;
 }
 .button :hover{
     background-color: #021929;
-    color: white;
+    color: #eeaf61;
     cursor: pointer;
     border: 1px solid;
     border-color: white;
@@ -76,7 +76,7 @@ h2{
     padding-bottom: 30px;
 }
 .articleFlex article{
-    
+    margin: 0 30px;
     border-radius: 20px;
     max-width: 360px;
     box-shadow:  5px 5px 8px #aaaaaa,
@@ -115,6 +115,8 @@ footer h4{
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .menuFooter{
@@ -141,6 +143,7 @@ footer h4{
     align-items: center;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .imageFlex img{
     width: 150px;
@@ -159,10 +162,45 @@ body.dark-theme{
 }
 .dark-theme header button{
     background-color: #050230;
-    color: #ffffff;
+    color: #eeaf61;
     font-weight: 600;
 }
 .dark-theme header button:hover{
-    background-color: #ffffff;
-    color: black;
+    background-color: #eeaf61;
+    color: #050230;
+}
+
+.menu-check, .menu-icon {
+    display: none;
+}
+
+.menu-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.menu-icon img{
+    max-width: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .menu-hamb{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu:checked ~ .menu-hamb, .menu-list{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .todo-menu{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }

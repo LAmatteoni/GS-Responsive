@@ -209,6 +209,8 @@ footer h4{
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .menuFooter{
@@ -235,6 +237,7 @@ footer h4{
     align-items: center;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .imageFlex img{
     width: 150px;
@@ -260,19 +263,7 @@ body.dark-theme{
     color: #050230;
 }
 
-
-
-
-
-
-
-
-
-.menu-check {
-    display: none;
-}
-
-.menu-icon{
+.menu-check, .menu-icon {
     display: none;
 }
 
@@ -282,6 +273,27 @@ body.dark-theme{
     list-style: none;
 }
 
-@media only screen and (max-width: 600px) {
+.menu-icon img{
+    max-width: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .menu-hamb{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu:checked ~ .menu-hamb, .menu-list{
+        display: flex;
+        flex-direction: column;
+    }
     
+    .todo-menu{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
