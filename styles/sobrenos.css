@@ -22,15 +22,19 @@ header{
     background-color: #016EB6;
 }
 
-header a{
+.menu-link{
     text-decoration: none;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     padding-right: 10px;
 }
 
-header a :hover{
-    color: #154564;
+.menu-link:hover{
+    color: #050230;
+    font-weight: 600;
+}
+.dark-theme .menu-link:hover{
+    color: #eeaf61;
 }
 
 header img{
