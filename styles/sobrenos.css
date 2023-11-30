@@ -145,3 +145,24 @@ footer h4{
 .imageFlex img{
     width: 150px;
 }
+
+
+.dark-theme header{
+    background-color: #003d66;
+}
+.dark-theme footer{
+    background-color: #003d66;
+}
+body.dark-theme{
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-theme header button{
+    background-color: #050230;
+    color: #ffffff;
+    font-weight: 600;
+}
+.dark-theme header button:hover{
+    background-color: #ffffff;
+    color: black;
+}

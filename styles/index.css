@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 .container {
     max-width: 1024px;
@@ -45,12 +45,13 @@ nav{
 button{
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #eeaf61;
     font-family: Montserrat;
+    font-weight: 600;
 }
 .button :hover{
-    background-color: #021929;
-    color: white;
+    background-color: #050230;
+    color: #eeaf61;
     cursor: pointer;
     border: 1px solid;
     border-color: white;
@@ -239,3 +240,48 @@ footer h4{
     width: 150px;
 }
 
+.dark-theme header{
+    background-color: #003d66;
+}
+.dark-theme footer{
+    background-color: #003d66;
+}
+body.dark-theme{
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-theme header button{
+    background-color: #050230;
+    color: #eeaf61;
+    font-weight: 600;
+}
+.dark-theme header button:hover{
+    background-color: #eeaf61;
+    color: #050230;
+}
+
+
+
+
+
+
+
+
+
+.menu-check {
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
