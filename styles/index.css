@@ -211,7 +211,7 @@ footer h4{
 .flexFooter{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     padding: 24px;
     flex-wrap: wrap;
     gap: 32px;
@@ -246,6 +246,13 @@ footer h4{
 .imageFlex img{
     width: 150px;
 }
+
+.imageIntegrantes{
+    max-width: 70px; 
+    height: auto; 
+    border-radius: 100%;
+}
+
 
 .dark-theme header{
     background-color: #003d66;
